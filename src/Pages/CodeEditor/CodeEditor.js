@@ -26,8 +26,8 @@ const CodeEditor = () => {
 
   const navigate = useNavigate();
 
-  const updateOutput = () => {
-    const combinedOutput = `
+useEffect(() => {
+  const combinedOutput = `
     <html>
       <head>
           <style>
@@ -39,15 +39,11 @@ const CodeEditor = () => {
           <script>${js}</script>
       </body>
     </html>
-    `;
+  `;
+  setOutput(combinedOutput);
+  setIsSaved(false);
+}, [html, css, js]);
 
-    setOutput(combinedOutput);
-  };
-
-  useEffect(() => {
-    updateOutput();
-    setIsSaved(false);
-  }, [html, css, js]); /* [html,css,js] - eslint */
 
   // --- Copy Button Function  ---
   const handleCopyClick = () => {
