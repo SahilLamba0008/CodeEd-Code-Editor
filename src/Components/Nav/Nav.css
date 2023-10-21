@@ -1,0 +1,26 @@
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    background: var(--main-bg);
+    color: var(--text-primary);
+    height: 60px;
+}
+.header-left p{
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1.5px var(--text-secondary);
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-right .user-name{
+    font-size: 18px;
+}
+.header-right .user-img{
+    height: 30px;
+    border-radius: 50%;
+}

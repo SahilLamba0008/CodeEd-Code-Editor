@@ -1,0 +1,54 @@
+.home{
+  background: var(--main-bg)
+}
+.home-wrapper {
+  height: calc(100vh - 60px); /* navbar component height 60px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.home-wrapper h1{
+  margin-top: 100px;
+  font-size: 3.5rem;
+  color: var(--text-primary);
+  text-align: center;
+  text-shadow: 3px 3px rgba(78, 234, 214, 0.6);
+}
+.home-wrapper h4{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -20px;
+  color: var(--text-secondary);
+}
+.home-wrapper p{
+  text-align: center;
+  font-size: 1rem;
+  margin-top: -10px;
+  color: var(--text-primary);
+}
+.home-wrapper .cta-button{
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid white;
+  background: linear-gradient(0deg, rgb(0, 0, 37), rgb(0, 30, 35));
+  color: var(--text-primary);
+}
+.home-wrapper .cta-button:hover{
+  background: black;
+  color: var(--text-secondary);
+  border-color: var(--text-secondary);
+}
+.home-wrapper .cta-button i {
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+}
+.home-wrapper .cta-button:hover i{
+  margin-left: 10px;
+}

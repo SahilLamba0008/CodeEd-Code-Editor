@@ -1,0 +1,22 @@
+.tooltip-container{
+    position: relative;
+    display: inline-block;
+}
+.tooltip{
+    position: absolute;
+    bottom: calc(-100% - 2px);
+    /* transform: translateX(-50%); */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1;
+    min-width: 50px;
+    text-align: center;
+    /* opacity: 0; */
+    /* transition: opacity 0.3s ease-in-out; */
+}
+/* .tooltip.active {
+  opacity: 1;
+} */
